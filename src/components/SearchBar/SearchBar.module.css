@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .input {
+    border: none;
+    background-color: white;
+    padding: 3px 8px;
+    text-decoration: none;
+    transition: 0.5s;
+    letter-spacing: 1px; 
+    overflow: hidden;
+    border-radius: 8px;
+    
+}
+
+
+
+
+.bttn{
+  
+    padding: 3px 8px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+    letter-spacing: 1px; 
+    overflow: hidden;
+    border-radius: 8px;
+    
+    
+}
+
+.bttn:hover {
+    text-transform: uppercase;
+    background: rgb(169, 83, 230);
+    color: white;
+    box-shadow: 0 0 5px rgb(169, 83, 230), 0 0 25px rgb(169, 83, 230), 0 0 50px rgb(169, 83, 230), 0 0 200px rgb(169, 83, 230);
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
+    font-weight: bold;
+    
+} 
+
