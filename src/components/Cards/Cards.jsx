@@ -8,7 +8,8 @@ export default function Cards(props) {
      <div className={styles.cartas}>
        {characters.map((chart) => {
          return (
-           <Card
+        
+           <Card 
              key={chart.id}
              id={chart.id}
              name={chart.name}

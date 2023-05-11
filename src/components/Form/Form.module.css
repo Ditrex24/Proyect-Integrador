@@ -1,0 +1,89 @@
+.mainDiv{
+ 
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display:flex;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 20%;
+    padding: 10px;
+   
+    
+     
+    
+    
+    
+}
+
+
+
+
+.mail{
+    background: url("../../Imagenes/Rick-and-Morty.png") no-repeat 1px -40px ;
+    background-size: contain;
+    
+    background-color: rgba(226, 43, 195, 0.374);
+    
+    width: 250px;
+    height: 300px;
+    padding: 50px 50px 100px 50px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+   
+    border-radius: 5%;
+    border: 5px solid greenyellow;
+        
+     }
+
+
+
+     .inicio{
+        margin-top: 150px;
+        color: greenyellow;
+        font-size: 30px;
+        text-transform: uppercase;
+
+        
+     }
+
+
+     .ma{
+        color: greenyellow;
+        text-transform: uppercase;
+     }
+
+     .pa{
+        color: greenyellow;
+        text-transform: uppercase;
+     }
+
+     .login{
+        padding: 5px 10px 20px 15px ;
+        color: black;
+        text-decoration: none;
+        transition: 1s;
+        letter-spacing: 2px; 
+        overflow: hidden;
+        border-radius: 5px;
+        background-color: white;
+        font-size: medium;
+        text-transform: uppercase;
+        cursor: pointer;
+        
+    }
+    
+    .login:hover {
+        background: greenyellow;
+        color: black;
+        box-shadow: 0 0 5px rgb(190, 255, 93), 0 0 25px rgb(144, 230, 83), 0 0 50px rgb(133, 255, 139), 0 0 200px rgb(225, 230, 83);
+        -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
+    }
+
+
+     

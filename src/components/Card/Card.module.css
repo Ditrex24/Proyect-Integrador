@@ -1,9 +1,155 @@
-.div{
-    color: aliceblue;
+.carta{
    
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    border-radius: 5%;
+    background-color: rgba(226, 43, 195, 0.374);
+    margin: 20px 10px 0px 10px;
+    border: 2px solid #ccc;
+  
+  
+    
+}
+
+
+
+
+
+.details{
+  color: transparent;
+  position: absolute;
+  height: 25px;
+  top: 0px;
+  width: 39px;
+  opacity: 0%;
+
+
+
 
 }
 
-.img{
-   
+
+
+ .img{
+     border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    margin: -50px 0px 0px 0px;
+  
+} 
+
+
+
+
+
+.Text{
+  
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #e762e98a;
+  width: 100%;
+  height: 60px;
+  bottom: 0px;
+  justify-content: space-evenly;
+  border-radius: 9PX;
+
+
 }
+
+
+
+.bttn{
+  background-color: #c84552;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 35%;
+  font-size: 10px;
+  height: 25px;
+  line-height: 0;
+  right: 3px;
+  top: 0px;
+  width: 39px;
+
+
+}
+
+.nombre{
+  font-size: 20px;
+  color: rgb(234, 227, 223);
+  text-align: center;
+  align-content: center;
+  margin: 5px 0 10px 0;
+  transition: 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+
+}
+
+
+.nombre:hover{
+  
+  box-shadow: 0 0 5px rgba(255, 0, 212, 0.929), 0 0 25px rgb(91, 4, 76), 0 0 50px rgb(255, 13, 215), 0 0 200px rgb(158, 19, 135);
+  
+  
+}
+
+
+.bttnFa{
+  position: absolute;
+  margin: -270px 220px 0px 0px;
+  background-color:white ;
+  border-radius: 40%;
+  border: none;
+  padding: 4px 4px 4px 4px;
+  border-radius:100% 100% 25% 100%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bttnFa:hover {
+  transform: scale(1.1);
+}
+
+
+
+.bttnFav{
+    position: absolute;
+    margin: -270px 220px 0px 0px;
+    background-color: #ff0019;
+    border-radius: 40%;
+    border: none;
+    padding: 5px 5px 5px 5px;
+    border-radius: 100% 100% 25% 100%;
+    animation-name: heart;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes heart {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

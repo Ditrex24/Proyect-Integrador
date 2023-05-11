@@ -1,8 +1,120 @@
 .nav{
-   /* background-color: aquamarine; */
+ 
    float: right;
-   margin-right: 20px;
+   margin-right: 5px;
    margin-top: 20px;
    border: none;
-   /* color: aquamarine; */
+   padding: 0px 5px;
+   padding-left: 40px;
+  
+  
+   
+  
 }
+
+.navBar{
+   background-color: rgba(137, 43, 226, 0.238); 
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 10px 0px;
+
+}
+
+.bttnR{
+ 
+  
+   padding: 5px 8px;
+   color: black;
+   text-decoration: none;
+   transition: 0.5s;
+   letter-spacing: 2px; 
+   overflow: hidden;
+   border-radius: 5px;
+   background-color: white; 
+   font-size: medium;
+   margin: 20px 50px 20px 10px;
+   
+
+   
+   
+  
+}
+
+
+.bttnR:hover {
+   background: rgb(26, 118, 171);
+   color: white;
+   box-shadow: 0 0 5px rgb(26, 118, 171), 0 0 25px rgb(26, 118, 171), 0 0 50px rgb(26, 118, 171), 0 0 200px rgb(26, 118, 171);
+   -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
+   cursor: pointer;
+ 
+   
+} 
+
+.bttnH{
+  
+   padding: 3px 8px;
+   color: black;
+   text-decoration: none;
+   transition: 0.5s;
+   letter-spacing: 2px; 
+   overflow: hidden;
+   border-radius: 5px;
+   background-color: white;
+   font-size: medium;
+   margin: 20px 0px 0px 10px;
+}
+
+.bttnH:hover {
+   background: rgb(169, 83, 230);
+   color: white;
+   box-shadow: 0 0 5px rgb(169, 83, 230), 0 0 25px rgb(169, 83, 230), 0 0 50px rgb(169, 83, 230), 0 0 200px rgb(169, 83, 230);
+   -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
+ 
+   
+}
+
+
+.bttnA{
+ 
+   padding: 3px 8px;
+   color: black;
+   text-decoration: none;
+   transition: 0.5s;
+   letter-spacing: 2px; 
+   overflow: hidden;
+   border-radius: 5px;
+   background-color: white;
+   font-size: medium;
+   margin: 20px 0px 0px 10px;
+   
+   
+}
+
+.bttnA:hover {
+   background: rgb(169, 83, 230);
+   color: white;
+   box-shadow: 0 0 5px rgb(169, 83, 230), 0 0 25px rgb(169, 83, 230), 0 0 50px rgb(169, 83, 230), 0 0 200px rgb(169, 83, 230);
+   -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
+ 
+   
+}
+
+.fav{
+   padding: 3px 8px;
+   color: black;
+   text-decoration: none;
+   letter-spacing: 2px; 
+   overflow: hidden;
+   border-radius: 5px;
+   background-color: white;
+   font-size: medium;
+   margin: 20px 0px 0px 8px;
+   transition: 0.5s;
+
+}
+
+.fav:hover {
+   background: rgb(239, 69, 69);
+   color: white;
+   box-shadow: 0 0 5px rgba(243, 73, 73, 0.796), 0 0 25px rgb(255, 0, 0), 0 0 50px rgb(255, 0, 0), 0 0 200px rgba(230, 72, 72, 0.747);
+   -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);}

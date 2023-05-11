@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
  .input {
     border: none;
     background-color: white;
@@ -12,13 +7,17 @@
     transition: 0.5s;
     letter-spacing: 1px; 
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 5px;
+    width: 150px;
+    height: 25px;
+    margin: 0px 3px;
+   
     
-}
+} 
 
 
 
-
+ 
 .bttn{
   
     padding: 3px 8px;
@@ -27,18 +26,19 @@
     transition: 0.5s;
     letter-spacing: 1px; 
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 5px;
+    
     
     
 }
 
 .bttn:hover {
-    text-transform: uppercase;
-    background: rgb(169, 83, 230);
+    
+    background: rgba(226, 43, 195, 0.542);
     color: white;
-    box-shadow: 0 0 5px rgb(169, 83, 230), 0 0 25px rgb(169, 83, 230), 0 0 50px rgb(169, 83, 230), 0 0 200px rgb(169, 83, 230);
-    -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
-    font-weight: bold;
+    box-shadow: 0 0 5px rgba(226, 43, 195, 0.374), 0 0 25px rgba(226, 43, 195, 0.429), 0 0 50px rgba(226, 43, 195, 0.374), 0 0 200px rgba(226, 43, 195, 0.379);
+    -webkit-box-reflect: below 2px linear-gradient(transparent, rgba(0, 0, 0, 0.153));
+ 
     
 } 
 

@@ -1,40 +1,80 @@
-// import characters, {} from './data.js';
-import React, { useState } from 'react';
-import axios from "axios"
+// Commons imports
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+// Styles
 import './App.css';
-import Cards from './components/Cards/Cards.jsx';
-import Nav from "./components/Nav/Nav.jsx";
+// Componenets
+import Cards from './components/Cards/Cards';
+import NavBar from './components/Nav/Nav';
+import About from './components/About/About'
+import Form from './components/Form/Form'
+
+// Router-Dom
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import Detail from './components/Detail/Detail';
+import Favorites from './components/Favorites/Favorites';
+
+
+
+// // Mi CODIGO AQU
+
+
+
+const email = '';
+const password = '';
+
 
 function App() {
-   
    const [characters, setCharacters] = useState([]);
+   const { pathname } = useLocation()
+   const navigate = useNavigate();
+   const [access, setAccess] = useState(false);
 
-   const onSearch = (id) => {
-      axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
-         const foundCharacter = characters.find((character) => character.id === data.id);
-         if (foundCharacter) {
-           window.alert('¡Este personaje ya ha sido agregado,!');
-         } else {
-           if (data.name) {
-             setCharacters((oldChars) => [...oldChars, data]);
-           } else {
-             window.alert('¡No hay personajes con este ID!');
-           }
-         }
-       });
-     }
-   
+
+   useEffect(() => {
+      !access && navigate('/');
+   }, [access]);
+
+   function onSearch(id) {
+    axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
+      if (data.name) {
+        setCharacters((oldChars) => [...oldChars, data]);
+      } else {
+        window.alert('¡No hay personajes con este ID!');
+      }
+    });
+  }
+
    const onClose = (id) => {
-setCharacters (characters.filter((chart)=> chart.id !== Number (id))) 
+      setCharacters(characters.filter((char) => char.id !== Number(id)))
    }
+
+   function login(userData) {
+      if (userData.password === password && userData.email === email) {
+         setAccess(true);
+         navigate('/home');
+      }
+   }
+
 
    return (
       <div className='App'>
-         <Nav onSearch={onSearch} />
-         <Cards characters={characters} onClose = {onClose} />
+         {
+            pathname !== '/' && <NavBar onSearch={onSearch} />
+         }
+
+         <Routes>
+            <Route path={'/'} element={<Form login={login} />} />
+            <Route path={'/home'} element={<Cards characters={characters} onClose={onClose} />} />
+            <Route path={'/about'} element={<About />} />
+            <Route path={'/detail/:id'} element={<Detail />} />
+            <Route path={'/favorites'} element={<Favorites />} />
+         </Routes>
       </div>
+
    );
 }
 
-
 export default App;
+
+
