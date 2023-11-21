@@ -1,6 +1,25 @@
+.divAbout {
+    /* Estilos para el contenedor principal */
+    padding: 25px; /* Añade algún relleno para separar el contenido del borde */
+    border: 2px solid #fff; /* Borde blanco de 2px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del marco */
+    background-color: #e24aed83; /* Color de fondo, puedes ajustarlo según tus preferencias */
+  }
+  
 .pre{
-    color: antiquewhite;
+    color: #36013c;
     margin-top: 80px;
-    font-size: 35px;
+    font-size: 45px;
+    font-style: monospace;
+    text-align: center;
+    font-style: unset;
  
 }
+
+ p {
+    font-style: monospace;
+    color: #4d044a;
+    font-size: 18px;
+    font-weight: bold;
+    /* Agrega otros estilos según tus preferencias */
+  }

@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axios from '../axiosConfig'; // Importa la instancia personalizada de Axios
 
 export const addFav = (character) => {
-  const endpoint = 'http://localhost:3001/rickandmorty/fav';
+  const endpoint = '/fav'; // Utiliza la instancia configurada, ya tiene la base URL
   return (dispatch)=> {
     axios.post(endpoint, character).then(({ data }) => {
       return dispatch({
@@ -13,10 +13,10 @@ export const addFav = (character) => {
 };
 
 export const removeFav = (id) => {
-  const endpoint = 'http://localhost:3001/rickandmorty/fav/' + id 
+  const endpoint = '/fav/' + id; // Utiliza la instancia configurada, ya tiene la base URL
   return (dispatch) => {
-    axios.delete (endpoint).then(({ data })=> {
-      return dispatch ({
+    axios.delete(endpoint).then(({ data })=> {
+      return dispatch({
         type: 'REMOVE_FAV',
         payload: data,
       });
@@ -24,19 +24,16 @@ export const removeFav = (id) => {
   };
 };
 
+export const filterCards = (gender) =>{
+  return {
+    type: 'FILTER',
+    payload: gender
+  };
+}
 
-
-  export const filterCards = (gender) =>{
-    return {
-      type: 'FILTER',
-      payload: gender
-    }
-  }
-
-  
-  export const orderCards = (order) => {
-    return {
-      type: 'ORDER ',
-      payload: order
-    }
-  }
+export const orderCards = (order) => {
+  return {
+    type: 'ORDER',
+    payload: order
+  };
+}
